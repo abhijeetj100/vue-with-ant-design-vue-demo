@@ -110,7 +110,13 @@
         <Button>Hello world</Button>
       </li> -->
       <li>
-        <Button icon="home" type="primary" slot="action">asd</Button>
+        <Button
+          icon="home"
+          type="primary"
+          slot="action"
+          @click="onClickHelloWorldButton"
+          >Hello World</Button
+        >
       </li>
     </ul>
   </div>
@@ -128,6 +134,10 @@ import { Button } from "ant-design-vue";
 })
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
+
+  onClickHelloWorldButton() {
+    window.alert("Hello World!!!");
+  }
 }
 </script>
 
