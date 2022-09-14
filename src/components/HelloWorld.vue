@@ -106,14 +106,26 @@
           >awesome-vue</a
         >
       </li>
+      <!-- <li>
+        <Button>Hello world</Button>
+      </li> -->
+      <li>
+        <Button icon="home" type="primary" slot="action">asd</Button>
+      </li>
     </ul>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import { Button } from "ant-design-vue";
+// import {} from 'ant-design-vue/es/button'
 
-@Component
+@Component({
+  components: {
+    Button,
+  },
+})
 export default class HelloWorld extends Vue {
   @Prop() private msg!: string;
 }
