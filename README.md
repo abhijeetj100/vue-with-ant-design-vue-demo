@@ -1,4 +1,4 @@
-# vue-materials-demo
+# vue-with-ant-design-vue-demo
 
 ## Project setup
 ```
